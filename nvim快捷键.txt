@@ -1,0 +1,33 @@
+1. 打开文件树 <leader> e
+2. 搜索文件 <leader> ff
+3. 搜索内容 <leader> fg
+4. 跳转定义 gd
+5. 查看报错 <leader> xx
+6. 保存 :w
+7. 退出 :q
+
+内置终端：
+1. :terminal 或者:term 
+2. 水平分屏：:split | terminal
+3. 垂直分屏：:vsplit | terminal 
+终端快捷键：
+进入终端输入模式：i或a
+退出终端回到普通模式 ctrl + \ 或 ctrl + N
+分屏里切换 ctrl + W + 方向键
+
+美化nvim
+ nvim ~/.config/nvim/lua/plugins/colorscheme.lua
+
+ return {
+    -- TokyoNight
+    {
+        "folke/tokyonight.nvim",
+        lazy=false,
+        priority=1000,
+        config=function()
+            vim.cmd([[colorscheme tokyonight-night]])
+            end,
+    },
+ }
+
+（好的我中毒了，nvim+claude code很舒服）
